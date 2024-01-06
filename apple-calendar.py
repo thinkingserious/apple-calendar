@@ -25,12 +25,12 @@ if __name__ == "__main__":
     
     # List of events with dates, locations, titles, and details
     events = [
-        ("Event Title", "Event Description", "Event Location", "Start Date", "End Date"),
-        ("Event Title", "Event Description", "Event Location", "2023-01-26 15:00", "2023-01-26 16:00"),
+        ("<Event Title>", "<Event Description>", "<Event Location>", "<Start Date>", "<End Date>"),
+        ("<Event Title>", "<Event Description>", "<Event Location>", "<2023-01-26 15:00>", "<2023-01-26 16:00>"),
     ]
     
     # The name of the calendar where the events will be added
-    calendar_name = "Thomas Family"
+    calendar_name = "<Calendar Name>"
     
     # Add each event to the calendar
     for event in events:

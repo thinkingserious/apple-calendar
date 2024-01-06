@@ -1,19 +1,36 @@
 # Python Access to Apple's Calendar App
 
-To run this code, you can follow these steps:
+This project allows users to interact with Apple's Calendar app using Python.
 
-1. Install the appscript module by running the command `pip install appscript` in your terminal or command prompt.
-2. Modify the `add_to_calendar` function to specify the calendar you want to add the event to.
-4. Call the `add_to_calendar` function with the event details you want to add to the calendar.
-5. Run the Python file by running the command `python3 trip.py` in your terminal or command prompt.
+## Installation
 
-Note that this code is specific to Apple's Calendar app and will only work on macOS. Additionally, you will need to have the Calendar app open for the events to be added to the calendar.
+To run this code, follow these steps:
 
-# ToDo
+1. Install the appscript module by running the following command in your terminal or command prompt:
 
-- [ ] delete the events that were created with this script
-- [ ] add alarm
-- [ ] add color coding
-- [ ] add invite to other people
-- [ ] add location
-- [ ] update via iPhone using Pythonista
+```zsh
+pip install appscript
+```
+
+## Usage
+
+1. Modify the `add_to_calendar` file and update the data surrounded by `<>` with your desired event details.
+
+2. Run the Python file by executing the following command in your terminal or command prompt:
+
+```zsh
+python3 apple-calendar.py
+```
+
+Note: Make sure to have the Calendar app open while running the script for the events to be added to the calendar. The first time you run the script you will prompted to allow access to the Calendar app. You will need to allow access for the script to work.
+
+## ToDo
+
+- [ ] Delete the events that were created with this script.
+- [ ] Add alarm functionality to the events.
+- [ ] Implement color coding for different types of events.
+- [ ] Add the ability to invite other people to the events.
+- [ ] Include location information for the events.
+- [ ] Explore the possibility of updating events via iPhone using Pythonista.
+
+Feel free to contribute to this project or provide any feedback!
