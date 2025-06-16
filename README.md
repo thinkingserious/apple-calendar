@@ -14,9 +14,7 @@ pip install appscript
 
 ## Usage
 
-1. Edit the `events` list in `apple-calendar.py` and update the data surrounded by `<>` with your desired event details.
-
-2. Run the Python file by executing the following command in your terminal or command prompt:
+1. Run the script to launch a small graphical interface where you can enter the event details. After filling out the form, click **Add Event** to create the event:
 
 ```zsh
 python3 apple-calendar.py
