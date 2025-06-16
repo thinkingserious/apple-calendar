@@ -14,7 +14,7 @@ pip install appscript
 
 ## Usage
 
-1. Modify the `add_to_calendar` file and update the data surrounded by `<>` with your desired event details.
+1. Edit the `events` list in `apple-calendar.py` and update the data surrounded by `<>` with your desired event details.
 
 2. Run the Python file by executing the following command in your terminal or command prompt:
 
