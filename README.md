@@ -22,7 +22,7 @@ pip install appscript
 python3 apple-calendar.py
 ```
 
-Note: Make sure to have the Calendar app open while running the script for the events to be added to the calendar. The first time you run the script you will **be** prompted to allow access to the Calendar app. You will need to allow access for the script to work.
+Note: Make sure to have the Calendar app open while running the script for the events to be added to the calendar. The first time you run the script you will be prompted to allow access to the Calendar app. You will need to allow access for the script to work.
 
 ## ToDo
 
