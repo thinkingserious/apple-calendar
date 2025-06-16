@@ -2,9 +2,20 @@ import appscript
 from datetime import datetime
 
 def add_to_calendar(title, details, location, start_datetime, end_datetime, calendar_name):
-    # Convert start_datetime and end_datetime to datetime objects
-    start_time = datetime.strptime(start_datetime, '%Y-%m-%d %H:%M')
-    end_time = datetime.strptime(end_datetime, '%Y-%m-%d %H:%M')
+    """Add a single event to ``calendar_name``.
+
+    If ``start_datetime`` or ``end_datetime`` can't be parsed, the event will be
+    skipped instead of raising an exception. This prevents the whole script from
+    failing when placeholder values are left in ``events``.
+    """
+
+    try:
+        # Convert start_datetime and end_datetime to datetime objects
+        start_time = datetime.strptime(start_datetime, "%Y-%m-%d %H:%M")
+        end_time = datetime.strptime(end_datetime, "%Y-%m-%d %H:%M")
+    except ValueError:
+        print(f"Skipping event '{title}' due to invalid date format.")
+        return
 
     # Create a new event in the specified calendar
     appscript.app("Calendar").calendars[calendar_name].events.end.make(
