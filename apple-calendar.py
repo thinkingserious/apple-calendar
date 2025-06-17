@@ -20,8 +20,9 @@ def add_to_calendar(title, details, location, start_datetime, end_datetime, cale
         return
 
     # Create a new event in the specified calendar
-    appscript.app("Calendar").calendars[calendar_name].events.end.make(
-        new=appscript.k.event, 
+    calendar = appscript.app("Calendar").calendars[appscript.its.name == calendar_name]
+    calendar.events.end.make(
+        new=appscript.k.event,
         with_properties={
             appscript.k.summary: title,
             appscript.k.description: details,
