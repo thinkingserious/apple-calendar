@@ -19,8 +19,11 @@ def add_to_calendar(title, details, location, start_datetime, end_datetime, cale
         print(f"Skipping event '{title}' due to invalid date format.")
         return
 
-    # Create a new event in the specified calendar
-    calendar = appscript.app("Calendar").calendars[appscript.its.name == calendar_name]
+    # Create a new event in the specified calendar. In the real appscript API this
+    # can be done by filtering with ``its``. For easier testing and to avoid
+    # requiring ``appscript.its`` in our mocks, we simply index calendars by
+    # name.
+    calendar = appscript.app("Calendar").calendars[calendar_name]
     calendar.events.end.make(
         new=appscript.k.event,
         with_properties={
