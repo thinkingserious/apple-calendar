@@ -26,22 +26,13 @@ if __name__ == "__main__":
     app = appscript.app
     
     # Set the base date for the itinerary
-    base_date = "2023-09-10"
+    base_date = "2023-09-29"
     
     # List of events in the itinerary
     events = [
-        ("Arrival at California Adventure", "Begin your magical journey.", "15:30", "16:00"),
-        ("Option A: Musical Celebration of Coco OR Option B: Dr. Strange: Mysteries of the Mystic Arts", "Attend the chosen show.", "16:00", "16:30"),
-        ("Avengers Assemble!", "Join the Avengers.", "16:40", "17:10"),
-        ("Meet Baymax in San Fransokyo Square", "Meet and greet session with Baymax.", "17:10", "17:30"),
-        ("Option A: Explore and Eat OR Option B: Guardians of the Galaxy: Awesome Dance Off!", "Choose one activity.", "17:30", "18:00"),
-        ("Mickey's Trick and Treat at Oogie Boogie Bash", "Attend the treat session.", "18:00", "18:30"),
-        ("Transition to Disneyland for Parade", "Head to Disneyland for the parade.", "18:30", "19:00"),
-        ("Magic Happens Parade", "Enjoy the parade.", "19:00", "20:00"),
-        ("Visit to Mickey's Toontown", "Explore the magical town.", "20:00", "20:30"),
-        ("Mickey & Minnie's Runaway Railway", "Experience the ride.", "20:30", "21:00"),
+        ("Beignets at Ralph Brennan's Jazz Kitchen", "Get beignets for Audrey.", "23:30", "23:59")
     ]
-    
+
     # Add each event to the calendar
     for event in events:
         title, details, start, end = event
